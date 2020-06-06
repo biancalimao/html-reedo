@@ -1,0 +1,82 @@
+body {
+    background-color: lightgray;
+}
+div {
+    margin: 20px;
+    padding: 5px;
+}
+.logo {
+    font-size: 3em;
+    font-family: sans-serif;
+    color: darkblue;
+}
+a{
+    font-size: 2em;
+    margin: 5px;
+}
+a:hover{
+    color: darkblue;
+    cursor: pointer;
+}
+ .container{
+   width: auto;
+   margin: 0 auto;
+ }
+ .form-contact {
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ .form-contact-input {
+   width: 100%;
+   color: black;
+   font-size: 1em;
+   background-color: white;
+   border: 1px solid black;
+   border-radius: 10px;
+   height:50px;
+   margin-bottom: 20px;
+   border-bottom: 1px solid lightgray;
+   border-left: 1px solid lightgray;
+   text-indent: 20px;
+ }
+ select{
+    width: 100%;
+    color: black;
+    font-size: 1em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    height:50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    text-indent: 20px;
+  }
+ .form-button {
+   width: 100%;
+   font-size: 20px;
+   border-radius: 10px;
+   color:white;
+   height: 40px;
+   opacity: .6;
+   margin-bottom: 20px;
+   cursor: pointer;
+   background: blue;
+   transition: 1s;
+ }
+ .form-contact-button:hover {
+   opacity: 1;
+ }
+ .form {
+ background: rgb(255, 255, 255);
+ max-width: 500px;
+ padding: 20px;
+ box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);       
+}
+.cadatro {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+.card-height{
+    height: 550px;
+}
