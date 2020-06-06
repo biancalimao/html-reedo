@@ -1,0 +1,65 @@
+body{
+    background-color: lightsalmon;
+}
+#grid{
+    grid-template-columns: 1fr 2fr;
+}
+#titulo {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Arial";   
+}
+
+#subtitulo {
+    text-align:center;
+    font-size: 30px;
+    font-family: "verdana"; 
+}
+   
+.bandeira {
+	height: 55px;
+	width: 70px;
+}
+#letra{
+    margin:auto, 0;
+}
+.letras{
+    height: 55px;
+	width: 70px; 
+}
+
+p{
+    position: relative;
+    margin-left: auto;
+}
+
+.jogo {
+    margin-right: 10px;
+    text-align:center;
+    margin: 0 auto;
+	font-family: "lucida sans";
+	font-size: 20px;
+    width: 650px;       
+}
+
+tr {
+  background-color: lightgray;
+ 
+}
+
+td {
+ height: 50px;
+ width: 60px   
+}
+
+.placar {
+	width: 10px;
+	height: 10px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+#tabelas{
+    margin-right: 200px;
+    margin-top: -330px;
+}
