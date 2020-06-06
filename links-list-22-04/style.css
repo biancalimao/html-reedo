@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+
+a:link {
+  color: blue;
+  font-size: 2em;
+  font-family: sans-serif;
+}
+
+a:hover {
+  color: black;
+  background-color: whitesmoke;
+  font-size: 3em;
+  font-family: sans-serif;
+}
+ 
+a:active {
+  color: greenyellow;
+  font-family: sans-serif;
+
+}
+a:visited {
+    color: orangered;
+    font-size: 2em;
+    font-family: sans-serif;
+  }
