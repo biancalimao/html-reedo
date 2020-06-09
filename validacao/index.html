@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+	
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+<div>
+	<div class="container">	
+	<h1> Cadastre-se:</h1> <br>
+	<form id="formulario">
+		<div>
+			<label>Nome:</label>
+			<input type="text" name="nome" id="nome" placeholder="Seu nome" required minlength="3">
+		</div> <br>
+
+		<div>
+			<label for="email">E-mail:</label>
+			<input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+		</div> <br>
+
+		<div>
+			<label for="telefone"> Telefone:</label>
+			<input type="text" name="telefone" id="telefone" placeholder="Informe seu celular" required>
+		</div> <br>
+
+		<div>
+			<label for="cpf"> CPF:</label>
+			<input type="cpf" name="cpf" id="cpf" placeholder="Seu CPF" required> 
+		</div> <br>
+
+		<div>
+			<label for="data-nascimento"> Data de nascimento:</label>
+			<input type="data-nascimento" name="data-nascimento" id="data-nascimento" placeholder="Seu nascimento" required>
+		</div> <br>
+
+		<div>
+			<label for="endereco"> Endereço:</label>
+			<input type="endereco" name="endereco" id="endereco" placeholder="Informe seu endereço" required minlength="3">
+		</div> <br>
+
+		<div>
+			<label for="cep"> CEP:</label>
+			<input type="cep" name="cep" id="cep" placeholder="Seu CEP" required minlength="8">
+		</div> <br>
+
+		<div>
+			<label for="estado">Estado</label>
+			<input type="estado" name="estado" id="estado" placeholder="Seu estado" required>
+		</div> <br>
+
+		<div>
+			<label for="cidade">Cidade:</label>
+			<input type="cidade" name="cidade" id="cidade" placeholder="Sua cidade" required>
+		</div> <br>
+
+		<div class="form-check">
+  			<input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required	>
+  			<label class="form-check-label" for="defaultCheck1">Eu aceito os termos de uso
+  			</label> 
+		</div> <br>		
+
+		<div>
+			<input type="submit" value="Cadastrar">
+		</div>
+
+	</form>
+	</div>
+</div>
+
+
+
+	<!-- incluir o jQuery -->
+	<script
+  		src="https://code.jquery.com/jquery-3.5.1.js"
+  		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  		crossorigin="anonymous">
+  	</script>
+
+  	<!-- Incluindo Bootstrap -->
+
+  	<script 
+  		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"crossorigin="anonymous">
+  		
+  	</script>
+  
+
+  	<!-- Incluindo o plugin validate (jQuery) -->
+  	<script 
+		src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js">
+	</script>
+
+	<!-- Trabalhando com nosso próprio script -->
+	<script type="text/javascript">
+		$("#formulario").validate({
+			rules : {
+				nome : {
+					required: true, 
+					minlength: 3
+				},
+				email : {
+					required: true
+				},
+				telefone : {
+					required: true
+				},
+				cpf : {
+					required: true
+				}, 
+				data-nascimento : {
+					required: true
+				},
+				endereco : {
+					required: true
+					minlength: 3
+				},
+				cep : {
+					required: true
+					minlength: 8
+				},
+				estado : {
+					required: true
+				},
+				cidade : {
+					required: true
+				},
+				form-check : {
+					required: true
+				}
+			},
+			messages : {
+				nome : {
+					required: "Por favor, informe o nome!",
+					minlength: "Insira no campo nome pelo menos 3 caracteres!"
+				},
+				email : {
+					required: "Por favor, preencha o campo email!",
+					email: "informe um e-mail válido: lll@ll.ll"
+				},
+				telefone : {
+					required: "Por favor preencha o telefone com DDD!"
+				},
+				cpf : {
+					required: "Por favor informe seu CPF com 11 dígitos!"
+				},
+				data-nascimento : {
+					required: "Por favor informe seu data de nascimento com 8 dígitos!"
+				},
+				endereco : {
+					"Por favor insera seu endereço",
+					"Insira no campo pelo menos 3 caracteres"
+				},
+				cep : {
+					"Por favor insera eu CEP",
+					"Esse campo tem 8 dígitos "
+				},
+				estado : {
+					"Por favor insera seu estado"
+				},
+				cidade : {
+					"Por favor informe seu estado"
+				}
+			}
+		});
+
+	</script>
+
+	<!-- Incluindo o plugin Mask: -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+	<script type="text/javascript">
+		// Aplicando a máscara ao campo telefone:
+		$("#telefone").mask('(00) 00000-0000'); // (11) 4567-8901
+		// Aplicando a máscara ao cpf:
+		$("#cpf").mask('000.000.000-00'); // 098.765.439-21
+		// Aplicando a máscara data de nasicimento:
+		$("#data-nascimento").mask('00/00/0000'); // 01/01/2001
+		$("#cep").mask('00000-000'); //01000-000
+	</script>
+
+</body>
+</html>
